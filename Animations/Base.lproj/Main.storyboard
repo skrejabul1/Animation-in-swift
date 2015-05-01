@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd8-d9-XVN">
+                                <rect key="frame" x="112" y="435" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hb4-Le-4aU"/>
+                                    <constraint firstAttribute="width" constant="97" id="nDi-pC-PZC"/>
+                                </constraints>
+                                <state key="normal" title="Update Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fk5-XL-fjE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-Yy-RVp">
+                                <rect key="frame" x="0.0" y="164" width="320" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cd8-d9-XVN" firstAttribute="top" secondItem="9z2-Yy-RVp" secondAttribute="bottom" constant="31" id="E9c-oB-PnF"/>
+                            <constraint firstAttribute="centerX" secondItem="Cd8-d9-XVN" secondAttribute="centerX" id="LcC-O1-Y99"/>
+                            <constraint firstAttribute="centerX" secondItem="9z2-Yy-RVp" secondAttribute="centerX" id="PVE-zv-yQ9"/>
+                            <constraint firstAttribute="centerY" secondItem="9z2-Yy-RVp" secondAttribute="centerY" id="ifh-kJ-rjc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="goku" destination="9z2-Yy-RVp" id="NOE-W7-umJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="447"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frame1.png" width="320" height="240"/>
+    </resources>
+</document>
